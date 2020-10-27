@@ -1,11 +1,15 @@
 Package: spatula
-Title: Utilities for Working with Spatial Data
+Title: Hypothesis Tests for Spatial Transcriptomics Data
 Version: 0.98.0
 Date: 2020-04-27
 Description:
-    Provides Bioconductor-friendly bindings for classes from the sp package,
-    allowing them to be stored as metadata fields on standard Bioconductor objects 
-    like the SummarizedExperiment container.
+    Implements some basic hypothesis tests for spatial (transcriptomics) data,
+    mostly related to spatial association with gene expression or regression
+    with respect to simple gradients. These functions can be considered to be
+    matrix-aware and SummarizedExperiment-compatible equivalents to
+    counterparts in other packages like spdep.
+Depends:
+    SingleCellExperiment
 Imports:
     BiocGenerics,
     BiocNeighbors,
